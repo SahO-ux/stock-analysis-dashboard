@@ -17,13 +17,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // ${geistSans.variable} ${geistMono.variable} Ignored TB Added in className
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------Custom Styles----------------- */
+
+/* ----- react-data-grid customizations ----- */
+
+/* container card */
+
+.fill-grid-full {
+  height: calc(100vh - 200px);
+  background-color: #f1f4f8 !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.fill-grid {
+  height: calc(100vh - 387px);
+  background-color: #f1f4f8 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* header row: sticky and elevated */
+.rdg-header-row {
+  background: #f8fafc; /* very light */
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+}
+
+/* header cell text */
+.rdg-header-row .rdg-cell {
+  color: #374151;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 12px 14px;
+}
+
+/* body cells */
+.rdg .rdg-row .rdg-cell {
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+/* row zebra + hover */
+.rdg .rdg-row:nth-child(odd) {
+  background: white;
+}
+.rdg .rdg-row:nth-child(even) {
+  background: #fbfdfe;
+}
+.rdg .rdg-row:hover {
+  background: #f1f5f9 !important;
+}
+
+/* right aligned cells (numbers) */
+.rdg .rdg-cell[data-colkey="purchasePrice"],
+.rdg .rdg-cell[data-colkey="qty"],
+.rdg .rdg-cell[data-colkey="investment"],
+.rdg .rdg-cell[data-colkey="cmp"],
+.rdg .rdg-cell[data-colkey="presentValue"],
+.rdg .rdg-cell[data-colkey="gainLoss"],
+.rdg .rdg-cell[data-colkey="peRatio"],
+.rdg .rdg-cell[data-colkey="latestEarnings"] {
+  text-align: right;
+}
+
+/* scrollbar (modern browsers) */
+.rdg-custom::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.rdg-custom::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.12);
+  border-radius: 999px;
+}
+.rdg-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* small screens adjust font sizes */
+@media (max-width: 768px) {
+  .rdg .rdg-row .rdg-cell {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .rdg-header-row .rdg-cell {
+    font-size: 12px;
+    padding: 10px 10px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ------------------Custom Styles END------------- */
+
+/* Grid fetch overlay (blocks grid while fetching) */
+.grid-fetch-overlay {
+  position: absolute;
+  inset: 0; /* top:0;left:0;right:0;bottom:0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 50;
+  pointer-events: all; /* block interactions below */
+}
+
+.grid-fetch-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* LoaderBar skeleton styles */
+.loaderbar-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.loaderbar-spinner {
+  color: #2563eb; /* blue */
+}
+.loaderbar-skeleton {
+  width: 100%;
+  max-width: 1100px;
+}
+.loaderbar-row {
+  display: grid;
+  grid-template-columns: 220px 120px 140px 110px 110px 100px; /* approximate column widths */
+  gap: 12px;
+  padding: 8px 12px;
+  align-items: center;
+}
+.skeleton {
+  height: 14px;
+  background: linear-gradient(90deg, #f3f4f6 0%, #e6eef6 50%, #f3f4f6 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+  border-radius: 6px;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
