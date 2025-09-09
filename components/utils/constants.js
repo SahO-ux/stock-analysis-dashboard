@@ -104,8 +104,24 @@ export const gridColumns = () => {
       cellClass: (row) =>
         row?.gainLoss > 0
           ? "text-center text-green-600 font-semibold"
+          : row?.gainLoss == 0
+          ? "text-center font-semibold"
           : "text-center text-red-600 font-semibold",
       formatter: (p) => <div>{INR_FMT.format(p.row?.gainLoss) || "0"}</div>,
+    },
+    {
+      key: "gainLossPct",
+      name: "Gain/Loss (%)",
+      resizable: true,
+      width: 150,
+      cellClass: (row) =>
+        row?.gainLossPct > 0
+          ? "text-center text-green-600 font-semibold"
+          : row?.gainLossPct == 0
+          ? "text-center font-semibold"
+          : "text-center text-red-600 font-semibold",
+      headerCellClass: "text-center",
+      formatter: (p) => <div>{p.row?.gainLossPct || 0}</div>,
     },
 
     {
