@@ -15,6 +15,7 @@ const INR = new Intl.NumberFormat("en-IN", {
 
 export default function Dashboard() {
   // isLoading is true only for one time when comp mounts and api gets called
+  // Managing Caching of DATA
   const { data, error, isValidating, isLoading } = useSWR(
     "/api/portfolio",
     fetcher,

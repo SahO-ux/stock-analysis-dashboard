@@ -9,7 +9,7 @@ import {
 } from "@/lib/helpers";
 import cache from "@/lib/cache";
 
-export async function GET(request) {
+export async function GET() {
   try {
     // connect DB
     await connectToDB();
