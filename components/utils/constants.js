@@ -11,7 +11,7 @@ export const gridColumns = () => {
       name: "Particulars",
       cellClass: "text-left font-medium text-gray-800",
       headerCellClass: "text-center",
-      formatter: ({ row }) => <div className="cell-content">{row.name}</div>,
+      renderCell: ({ row }) => <div className="cell-content">{row.name}</div>,
       resizable: true,
       frozen: true,
       width: 150,
@@ -31,9 +31,11 @@ export const gridColumns = () => {
       cellClass: "text-center text-gray-700",
       resizable: true,
       headerCellClass: "text-center",
-      formatter: (p) => (
+      renderCell: (p) => (
         <div>
-          {p.row.purchasePrice ? INR_FMT.format(p.row.purchasePrice) : "0"}
+          {p.row.purchasePrice
+            ? INR_FMT.format(Number(p.row.purchasePrice))
+            : "0"}
         </div>
       ),
     },
@@ -44,7 +46,7 @@ export const gridColumns = () => {
       cellClass: "text-center text-gray-700",
       headerCellClass: "text-center",
       width: 70,
-      formatter: (p) => <div>{p.row.qty}</div>,
+      renderCell: (p) => <div>{p.row.qty}</div>,
     },
     {
       key: "investment",
@@ -53,7 +55,9 @@ export const gridColumns = () => {
       width: 130,
       cellClass: "text-center text-gray-800 font-medium",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{INR_FMT.format(p.row.investment || "0")}</div>,
+      renderCell: (p) => (
+        <div>{INR_FMT.format(Number(p.row.investment)) || "0"}</div>
+      ),
     },
     {
       key: "portfolioPercent",
@@ -62,7 +66,7 @@ export const gridColumns = () => {
       width: 150,
       cellClass: "text-center text-indigo-500 font-medium",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{p.row?.portfolioPercent || 0}</div>,
+      renderCell: (p) => <div>{p.row?.portfolioPercent || 0}</div>,
     },
     {
       key: "exchangeName",
@@ -70,7 +74,7 @@ export const gridColumns = () => {
       cellClass: "text-center text-gray-600",
       resizable: true,
       headerCellClass: "text-center",
-      formatter: ({ row }) => <div>{row?.exchangeName || "-"}</div>,
+      renderCell: ({ row }) => <div>{row?.exchangeName || "-"}</div>,
       resizable: true,
       width: 140,
     },
@@ -81,8 +85,8 @@ export const gridColumns = () => {
       resizable: true,
       cellClass: "text-center text-gray-700",
       headerCellClass: "text-center",
-      formatter: (p) => (
-        <div>{p.row.cmp ? INR_FMT.format(p.row.cmp) : "0"}</div>
+      renderCell: (p) => (
+        <div>{p.row.cmp ? INR_FMT.format(Number(p.row.cmp)) : "0"}</div>
       ),
     },
     {
@@ -92,7 +96,7 @@ export const gridColumns = () => {
       resizable: true,
       cellClass: "text-center text-blue-600 font-medium",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{p.row?.presentValue?.toFixed(2) || 0}</div>,
+      renderCell: (p) => <div>{INR_FMT.format(p.row?.presentValue) || 0}</div>,
     },
 
     {
@@ -107,7 +111,9 @@ export const gridColumns = () => {
           : row?.gainLoss == 0
           ? "text-center font-semibold"
           : "text-center text-red-600 font-semibold",
-      formatter: (p) => <div>{INR_FMT.format(p.row?.gainLoss) || "0"}</div>,
+      renderCell: (p) => (
+        <div>{INR_FMT.format(Number(p.row?.gainLoss)) || "0"}</div>
+      ),
     },
     {
       key: "gainLossPct",
@@ -121,17 +127,37 @@ export const gridColumns = () => {
           ? "text-center font-semibold"
           : "text-center text-red-600 font-semibold",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{p.row?.gainLossPct || 0}</div>,
+      renderCell: (p) => <div>{p.row?.gainLossPct || 0}</div>,
     },
 
     {
       key: "peRatio",
-      name: "P/E Ratio",
+      name: "P/E (TTM)",
       width: 90,
       resizable: true,
       cellClass: "text-center text-gray-700",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{p.row.peRatio?.toFixed(2) || "-"}</div>,
+      renderCell: (p) => <div>{p.row.peRatio?.toFixed(2) || "-"}</div>,
+    },
+    {
+      key: "bookValue",
+      name: "Book Value",
+      width: 90,
+      resizable: true,
+      cellClass: "text-center text-gray-700",
+      headerCellClass: "text-center",
+      renderCell: (p) => (
+        <div>{INR_FMT.format(Number(p.row.bookValue)) || "-"}</div>
+      ),
+    },
+    {
+      key: "marketCap",
+      name: "Market Cap",
+      width: 100,
+      resizable: true,
+      cellClass: "text-center text-gray-700",
+      headerCellClass: "text-center",
+      renderCell: (p) => <div>{INR_FMT.format(p?.row?.marketCap) || "-"}</div>,
     },
     {
       key: "latestEarnings",
@@ -140,7 +166,7 @@ export const gridColumns = () => {
       resizable: true,
       cellClass: "text-center text-gray-600",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{p.row.latestEarnings ?? "-"}</div>,
+      renderCell: (p) => <div>{p.row.latestEarnings ?? "-"}</div>,
     },
     {
       key: "sector",
