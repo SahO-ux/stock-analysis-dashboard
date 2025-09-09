@@ -23,7 +23,7 @@ Deliver a portfolio dashboard that auto-refreshes with live data, supports group
 
 ### 2. Rate limiting & performance
 - **Challenge:** Refreshing every 15s for multiple stocks could hit rate limits.  
-- **Solution:** Cache results in memory (TTL ~15s). API endpoint aggregates data once, frontend only makes a single request.
+- **Solution:** Cache results in memory (TTL ~15s) + bottleneck that allows ~4–5 requests per second to `yahoo-finance2`. API endpoint aggregates data once, frontend only makes a single request.
 
 ---
 
