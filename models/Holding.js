@@ -2,21 +2,10 @@ import mongoose from "mongoose";
 
 const HoldingSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true },
-    tickerOrCode: { type: String },
-    exchange: { type: String },
-    purchasePrice: { type: Number },
-    qty: { type: Number },
-    investment: { type: Number },
-    portfolioPct: { type: Number },
-    cmp: { type: Number },
-    presentValue: { type: Number },
-    gainLoss: { type: Number },
-    gainLossPct: { type: Number },
-    marketCap: { type: Number },
-    peRatio: { type: Number },
-    latestEarnings: { type: Number },
-    sector: { type: String },
+    tickerOrCode: { type: String, required: true },
+    purchasePrice: { type: Number, required: true },
+    qty: { type: Number, required: true },
+    sector: { type: String, required: true },
   },
   { timestamps: true }
 );
