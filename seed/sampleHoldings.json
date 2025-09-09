@@ -1,181 +1,155 @@
 [
   {
-    "name": "HDFC Bank",
     "tickerOrCode": "HDFCBANK",
     "purchasePrice": 950,
     "qty": 50,
     "sector": "Financial Sector"
   },
   {
-    "name": "Bajaj Finance",
     "tickerOrCode": "BAJFINANCE",
     "purchasePrice": 940,
     "qty": 15,
     "sector": "Financial Sector"
   },
   {
-    "name": "Reliance Industries",
     "tickerOrCode": "RELIANCE",
     "purchasePrice": 1380,
     "qty": 30,
     "sector": "Energy"
   },
   {
-    "name": "TCS",
     "tickerOrCode": "TCS",
     "purchasePrice": 3300,
     "qty": 20,
     "sector": "Technology"
   },
   {
-    "name": "ICICI Bank",
     "tickerOrCode": "ICICIBANK",
     "purchasePrice": 1398,
     "qty": 70,
     "sector": "Financial Sector"
   },
   {
-    "name": "Axis Bank",
     "tickerOrCode": "AXISBANK",
     "purchasePrice": 1053,
     "qty": 60,
     "sector": "Financial Sector"
   },
   {
-    "name": "Kotak Mahindra Bank",
     "tickerOrCode": "KOTAKBANK",
     "purchasePrice": 1952,
     "qty": 25,
     "sector": "Financial Sector"
   },
   {
-    "name": "SBI",
     "tickerOrCode": "SBIN",
     "purchasePrice": 808,
     "qty": 80,
     "sector": "Financial Sector"
   },
   {
-    "name": "HCL Technologies",
     "tickerOrCode": "HCLTECH",
     "purchasePrice": 1403,
     "qty": 35,
     "sector": "Technology"
   },
   {
-    "name": "Wipro",
     "tickerOrCode": "WIPRO",
     "purchasePrice": 240,
     "qty": 90,
     "sector": "Technology"
   },
   {
-    "name": "Tech Mahindra",
     "tickerOrCode": "TECHM",
     "purchasePrice": 1460,
     "qty": 30,
     "sector": "Technology"
   },
   {
-    "name": "Larsen & Toubro",
     "tickerOrCode": "LT",
     "purchasePrice": 3529,
     "qty": 25,
     "sector": "Infrastructure"
   },
   {
-    "name": "Bharti Airtel",
     "tickerOrCode": "BHARTIARTL",
     "purchasePrice": 1880,
     "qty": 50,
     "sector": "Telecom"
   },
   {
-    "name": "Maruti Suzuki",
     "tickerOrCode": "MARUTI",
     "purchasePrice": 15200,
     "qty": 10,
     "sector": "Automobile"
   },
   {
-    "name": "Hindustan Unilever",
     "tickerOrCode": "HINDUNILVR",
     "purchasePrice": 2350,
     "qty": 20,
     "sector": "FMCG"
   },
   {
-    "name": "ITC",
     "tickerOrCode": "ITC",
     "purchasePrice": 400,
     "qty": 150,
     "sector": "FMCG"
   },
   {
-    "name": "Nestle India",
     "tickerOrCode": "NESTLEIND",
     "purchasePrice": 1100,
     "qty": 5,
     "sector": "FMCG"
   },
   {
-    "name": "Asian Paints",
     "tickerOrCode": "ASIANPAINT",
     "purchasePrice": 2500,
     "qty": 20,
     "sector": "Consumer"
   },
   {
-    "name": "Titan",
     "tickerOrCode": "TITAN",
     "purchasePrice": 3600,
     "qty": 20,
     "sector": "Consumer"
   },
   {
-    "name": "Power Grid",
     "tickerOrCode": "POWERGRID",
     "purchasePrice": 250,
     "qty": 120,
     "sector": "Power"
   },
   {
-    "name": "NTPC",
     "tickerOrCode": "NTPC",
     "purchasePrice": 320,
     "qty": 200,
     "sector": "Power"
   },
   {
-    "name": "JSW Steel",
     "tickerOrCode": "JSWSTEEL",
     "purchasePrice": 1080,
     "qty": 40,
     "sector": "Steel"
   },
   {
-    "name": "Tata Steel",
     "tickerOrCode": "TATASTEEL",
     "purchasePrice": 160,
     "qty": 180,
     "sector": "Steel"
   },
   {
-    "name": "UltraTech Cement",
     "tickerOrCode": "ULTRACEMCO",
     "purchasePrice": 12000,
     "qty": 10,
     "sector": "Cement"
   },
   {
-    "name": "Adani Ports",
     "tickerOrCode": "ADANIPORTS",
     "purchasePrice": 1200,
     "qty": 40,
     "sector": "Infrastructure"
   },
   {
-    "name": "GAIL",
     "tickerOrCode": "GAIL",
     "purchasePrice": 170,
     "qty": 200,
