@@ -52,8 +52,7 @@ Deliver a portfolio dashboard that auto-refreshes with live data, supports group
 - **Challenge:** Display grouped portfolio data (totals per sector).  
 - **Solution:**  
   - Backend sends grouped structure with totals.  
-  - Frontend renders collapsible sections with per-sector CSV export.  
-  - Added “Export All Sectors” button with toast confirmation.
+  - Frontend renders collapsible sections per-sector.
 
 ---
 
