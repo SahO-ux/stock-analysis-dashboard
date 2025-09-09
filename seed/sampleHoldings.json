@@ -4,13 +4,6 @@
     "tickerOrCode": "HDFCBANK",
     "purchasePrice": 950,
     "qty": 50,
-    "investment": 74500,
-    "portfolioPct": 0.048280689,
-    "cmp": 1700.15,
-    "presentValue": 85007.5,
-    "gainLoss": 10507.5,
-    "peRatio": 18.69,
-    "latestEarnings": 91.02,
     "sector": "Financial Sector"
   },
   {
@@ -18,13 +11,6 @@
     "tickerOrCode": "BAJFINANCE",
     "purchasePrice": 940,
     "qty": 15,
-    "investment": 96990,
-    "portfolioPct": 0.0628556245,
-    "cmp": 8419.6,
-    "presentValue": 126294,
-    "gainLoss": 29304,
-    "peRatio": 32.63,
-    "latestEarnings": 257.8,
     "sector": "Financial Sector"
   },
   {
@@ -32,13 +18,6 @@
     "tickerOrCode": "RELIANCE",
     "purchasePrice": 1380,
     "qty": 30,
-    "investment": 66000,
-    "portfolioPct": 0.04278556,
-    "cmp": 2405,
-    "presentValue": 72150,
-    "gainLoss": 6150,
-    "peRatio": 28.3,
-    "latestEarnings": 90.4,
     "sector": "Energy"
   },
   {
@@ -46,13 +25,6 @@
     "tickerOrCode": "TCS",
     "purchasePrice": 3300,
     "qty": 20,
-    "investment": 66000,
-    "portfolioPct": 0.04278556,
-    "cmp": 3525,
-    "presentValue": 70500,
-    "gainLoss": 4500,
-    "peRatio": 30.1,
-    "latestEarnings": 115.2,
     "sector": "Technology"
   },
   {
@@ -60,13 +32,6 @@
     "tickerOrCode": "ICICIBANK",
     "purchasePrice": 1398,
     "qty": 70,
-    "investment": 61250,
-    "portfolioPct": 0.03974017,
-    "cmp": 945,
-    "presentValue": 66150,
-    "gainLoss": 4900,
-    "peRatio": 19.2,
-    "latestEarnings": 49.2,
     "sector": "Financial Sector"
   },
   {
@@ -74,13 +39,6 @@
     "tickerOrCode": "AXISBANK",
     "purchasePrice": 1053,
     "qty": 60,
-    "investment": 43800,
-    "portfolioPct": 0.028402497,
-    "cmp": 812,
-    "presentValue": 48720,
-    "gainLoss": 4920,
-    "peRatio": 22.7,
-    "latestEarnings": 35.7,
     "sector": "Financial Sector"
   },
   {
@@ -88,13 +46,6 @@
     "tickerOrCode": "KOTAKBANK",
     "purchasePrice": 1952,
     "qty": 25,
-    "investment": 46250,
-    "portfolioPct": 0.029978846,
-    "cmp": 1955,
-    "presentValue": 48875,
-    "gainLoss": 2625,
-    "peRatio": 23.1,
-    "latestEarnings": 84.7,
     "sector": "Financial Sector"
   },
   {
@@ -102,13 +53,6 @@
     "tickerOrCode": "SBIN",
     "purchasePrice": 808,
     "qty": 80,
-    "investment": 44000,
-    "portfolioPct": 0.02853704,
-    "cmp": 610,
-    "presentValue": 48800,
-    "gainLoss": 4800,
-    "peRatio": 13.9,
-    "latestEarnings": 43.9,
     "sector": "Financial Sector"
   },
   {
@@ -116,13 +60,6 @@
     "tickerOrCode": "HCLTECH",
     "purchasePrice": 1403,
     "qty": 35,
-    "investment": 36575,
-    "portfolioPct": 0.02373103,
-    "cmp": 1120,
-    "presentValue": 39200,
-    "gainLoss": 2625,
-    "peRatio": 20.6,
-    "latestEarnings": 54.3,
     "sector": "Technology"
   },
   {
@@ -130,13 +67,6 @@
     "tickerOrCode": "WIPRO",
     "purchasePrice": 240,
     "qty": 90,
-    "investment": 37800,
-    "portfolioPct": 0.02451316,
-    "cmp": 455,
-    "presentValue": 40950,
-    "gainLoss": 3150,
-    "peRatio": 18.4,
-    "latestEarnings": 24.7,
     "sector": "Technology"
   },
   {
@@ -144,13 +74,6 @@
     "tickerOrCode": "TECHM",
     "purchasePrice": 1460,
     "qty": 30,
-    "investment": 30900,
-    "portfolioPct": 0.02003914,
-    "cmp": 1125,
-    "presentValue": 33750,
-    "gainLoss": 2850,
-    "peRatio": 21.9,
-    "latestEarnings": 51.4,
     "sector": "Technology"
   },
   {
@@ -158,13 +81,6 @@
     "tickerOrCode": "LT",
     "purchasePrice": 3529,
     "qty": 25,
-    "investment": 41250,
-    "portfolioPct": 0.0267585,
-    "cmp": 1780,
-    "presentValue": 44500,
-    "gainLoss": 3250,
-    "peRatio": 24.8,
-    "latestEarnings": 71.7,
     "sector": "Infrastructure"
   },
   {
@@ -172,13 +88,6 @@
     "tickerOrCode": "BHARTIARTL",
     "purchasePrice": 1880,
     "qty": 50,
-    "investment": 34250,
-    "portfolioPct": 0.02222222,
-    "cmp": 735,
-    "presentValue": 36750,
-    "gainLoss": 2500,
-    "peRatio": 21.1,
-    "latestEarnings": 33.1,
     "sector": "Telecom"
   },
   {
@@ -186,13 +95,6 @@
     "tickerOrCode": "MARUTI",
     "purchasePrice": 15200,
     "qty": 10,
-    "investment": 72000,
-    "portfolioPct": 0.0466989,
-    "cmp": 7550,
-    "presentValue": 75500,
-    "gainLoss": 3500,
-    "peRatio": 30.4,
-    "latestEarnings": 249.2,
     "sector": "Automobile"
   },
   {
@@ -200,13 +102,6 @@
     "tickerOrCode": "HINDUNILVR",
     "purchasePrice": 2350,
     "qty": 20,
-    "investment": 47000,
-    "portfolioPct": 0.03047559,
-    "cmp": 2490,
-    "presentValue": 49800,
-    "gainLoss": 2800,
-    "peRatio": 35.1,
-    "latestEarnings": 70.9,
     "sector": "FMCG"
   },
   {
@@ -214,13 +109,6 @@
     "tickerOrCode": "ITC",
     "purchasePrice": 400,
     "qty": 150,
-    "investment": 32250,
-    "portfolioPct": 0.02089655,
-    "cmp": 240,
-    "presentValue": 36000,
-    "gainLoss": 3750,
-    "peRatio": 28.4,
-    "latestEarnings": 8.45,
     "sector": "FMCG"
   },
   {
@@ -228,13 +116,6 @@
     "tickerOrCode": "NESTLEIND",
     "purchasePrice": 1100,
     "qty": 5,
-    "investment": 92500,
-    "portfolioPct": 0.05995671,
-    "cmp": 19250,
-    "presentValue": 96250,
-    "gainLoss": 3750,
-    "peRatio": 45.8,
-    "latestEarnings": 420.3,
     "sector": "FMCG"
   },
   {
@@ -242,13 +123,6 @@
     "tickerOrCode": "ASIANPAINT",
     "purchasePrice": 2500,
     "qty": 20,
-    "investment": 64000,
-    "portfolioPct": 0.04146934,
-    "cmp": 3335,
-    "presentValue": 66700,
-    "gainLoss": 2700,
-    "peRatio": 41.2,
-    "latestEarnings": 161.9,
     "sector": "Consumer"
   },
   {
@@ -256,13 +130,6 @@
     "tickerOrCode": "TITAN",
     "purchasePrice": 3600,
     "qty": 20,
-    "investment": 48000,
-    "portfolioPct": 0.03111121,
-    "cmp": 2525,
-    "presentValue": 50500,
-    "gainLoss": 2500,
-    "peRatio": 60.3,
-    "latestEarnings": 83.7,
     "sector": "Consumer"
   },
   {
@@ -270,13 +137,6 @@
     "tickerOrCode": "POWERGRID",
     "purchasePrice": 250,
     "qty": 120,
-    "investment": 22800,
-    "portfolioPct": 0.0147651,
-    "cmp": 205,
-    "presentValue": 24600,
-    "gainLoss": 1800,
-    "peRatio": 12.5,
-    "latestEarnings": 16.4,
     "sector": "Power"
   },
   {
@@ -284,13 +144,6 @@
     "tickerOrCode": "NTPC",
     "purchasePrice": 320,
     "qty": 200,
-    "investment": 24000,
-    "portfolioPct": 0.01556776,
-    "cmp": 130,
-    "presentValue": 26000,
-    "gainLoss": 2000,
-    "peRatio": 10.9,
-    "latestEarnings": 11.9,
     "sector": "Power"
   },
   {
@@ -298,13 +151,6 @@
     "tickerOrCode": "JSWSTEEL",
     "purchasePrice": 1080,
     "qty": 40,
-    "investment": 28000,
-    "portfolioPct": 0.01814602,
-    "cmp": 745,
-    "presentValue": 29800,
-    "gainLoss": 1800,
-    "peRatio": 19.5,
-    "latestEarnings": 38.2,
     "sector": "Steel"
   },
   {
@@ -312,13 +158,6 @@
     "tickerOrCode": "TATASTEEL",
     "purchasePrice": 160,
     "qty": 180,
-    "investment": 19800,
-    "portfolioPct": 0.01283159,
-    "cmp": 125,
-    "presentValue": 22500,
-    "gainLoss": 2700,
-    "peRatio": 12.7,
-    "latestEarnings": 9.85,
     "sector": "Steel"
   },
   {
@@ -326,13 +165,6 @@
     "tickerOrCode": "ULTRACEMCO",
     "purchasePrice": 12000,
     "qty": 10,
-    "investment": 65000,
-    "portfolioPct": 0.04213938,
-    "cmp": 6725,
-    "presentValue": 67250,
-    "gainLoss": 2250,
-    "peRatio": 35.6,
-    "latestEarnings": 188.9,
     "sector": "Cement"
   },
   {
@@ -340,13 +172,6 @@
     "tickerOrCode": "ADANIPORTS",
     "purchasePrice": 1200,
     "qty": 40,
-    "investment": 28400,
-    "portfolioPct": 0.01841996,
-    "cmp": 755,
-    "presentValue": 30200,
-    "gainLoss": 1800,
-    "peRatio": 27.4,
-    "latestEarnings": 27.6,
     "sector": "Infrastructure"
   },
   {
@@ -354,13 +179,6 @@
     "tickerOrCode": "GAIL",
     "purchasePrice": 170,
     "qty": 200,
-    "investment": 22000,
-    "portfolioPct": 0.01425335,
-    "cmp": 118,
-    "presentValue": 23600,
-    "gainLoss": 1600,
-    "peRatio": 12.2,
-    "latestEarnings": 9.65,
     "sector": "Energy"
   }
 ]
