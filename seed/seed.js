@@ -9,23 +9,15 @@ if (!MONGODB_URI) {
   process.exit(1);
 }
 
-const HoldingSchema = new mongoose.Schema({
-  name: String,
-  tickerOrCode: mongoose.Schema.Types.Mixed,
-  exchange: String,
-  purchasePrice: Number,
-  qty: Number,
-  investment: Number,
-  portfolioPct: Number,
-  cmp: Number,
-  presentValue: Number,
-  gainLoss: Number,
-  gainLossPct: Number,
-  marketCap: Number,
-  peRatio: Number,
-  latestEarnings: Number,
-  sector: String,
-});
+const HoldingSchema = new mongoose.Schema(
+  {
+    tickerOrCode: { type: String, required: true, unique: true },
+    purchasePrice: { type: Number, required: true, default: 0 },
+    qty: { type: Number, required: true, default: 0 },
+    sector: { type: String, required: true, default: "Other" },
+  },
+  { timestamps: true }
+);
 const Holding =
   mongoose.models?.Holding || mongoose.model("Holding", HoldingSchema);
 
