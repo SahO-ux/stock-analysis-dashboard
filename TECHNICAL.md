@@ -14,7 +14,7 @@ Deliver a portfolio dashboard that auto-refreshes with live data, supports group
 ### 1. Unofficial finance APIs
 - **Challenge:** It was mentioned to get P/E and latest earnings from google-finance, but due to non-maintenance, this library was not working even
   after following its' documentation on https://www.npmjs.com/package/google-finance, and scraping data from google finance page (Eg. https://www.google.com/finance/quote/ADANIPORTS:NSE, here "ADANIPORTS:NSE" is stock symbol)
-  by using cheerio is not reliable and to get reliable P/E & latest earnings we should rely on paid APIs such as Finnhub.
+  by using cheerio is not reliable and to get reliable P/E & latest earnings we should rely on paid APIs such as Finnhub https://finnhub.io/docs/api/introduction.
   So I used existing yahoo-finance2 for getting this values, that is, P/E as trailingPE & Latest earnings as epsTrailingTwelveMonths, returned by yahoo respectively.
   
 - **Solution:** Used `yahoo-finance2` + server-side caching (`node-cache`) & bootleneck to reduce API hits. Added UI disclaimer about unofficial sources at bottom of table.
