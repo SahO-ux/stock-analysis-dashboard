@@ -17,7 +17,7 @@ Deliver a portfolio dashboard that auto-refreshes with live data, supports group
   by using cheerio is not reliable and to get reliable P/E & latest earnings we should rely on paid APIs such as Finnhub https://finnhub.io/docs/api/introduction.
   So I used existing yahoo-finance2 for getting this values, that is, P/E as trailingPE & Latest earnings as epsTrailingTwelveMonths, returned by yahoo respectively.
   
-- **Solution:** Used `yahoo-finance2` + server-side caching (`node-cache`) & bootleneck to reduce API hits. Added UI disclaimer about unofficial sources at bottom of table.
+- **Solution:** Used `yahoo-finance2` + server-side caching (`node-cache`) + bottleneck(`bootleneck`) to reduce API hits. Added UI disclaimer about unofficial sources at bottom of table.
 
 ---
 
