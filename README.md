@@ -56,7 +56,7 @@ npm run dev
 - Use Export CSV buttons
 
 ⚠️ Notes
-- Data is fetched from unofficial finance linrary (yahoo-finance). Values may vary.
-- For production use, I recommend a reliable paid market data API.
+- Data is fetched from unofficial finance library (yahoo-finance2). Values may vary.
+- For production use, I recommend a reliable paid market data API like Finnhub https://finnhub.io/docs/api.
 - CSV export is client-side; very large datasets may impact memory.
 
