@@ -3,8 +3,6 @@ const INR_FMT = new Intl.NumberFormat("en-IN", {
   currency: "INR",
   maximumFractionDigits: 0,
 });
-const NUM = (num) =>
-  num == null ? "-" : new Intl.NumberFormat("en-IN").format(Math.round(num));
 
 export const gridColumns = () => {
   const columns = [
@@ -35,7 +33,7 @@ export const gridColumns = () => {
       headerCellClass: "text-center",
       formatter: (p) => (
         <div>
-          {p.row.purchasePrice ? INR_FMT.format(p.row.purchasePrice) : "-"}
+          {p.row.purchasePrice ? INR_FMT.format(p.row.purchasePrice) : "0"}
         </div>
       ),
     },
@@ -46,7 +44,7 @@ export const gridColumns = () => {
       cellClass: "text-center text-gray-700",
       headerCellClass: "text-center",
       width: 70,
-      formatter: (p) => <div>{NUM(p.row.qty)}</div>,
+      formatter: (p) => <div>{p.row.qty}</div>,
     },
     {
       key: "investment",
@@ -55,7 +53,7 @@ export const gridColumns = () => {
       width: 130,
       cellClass: "text-center text-gray-800 font-medium",
       headerCellClass: "text-center",
-      formatter: (p) => <div>{INR_FMT.format(p.row.investment || 0)}</div>,
+      formatter: (p) => <div>{INR_FMT.format(p.row.investment || "0")}</div>,
     },
     {
       key: "portfolioPercent",
@@ -84,7 +82,7 @@ export const gridColumns = () => {
       cellClass: "text-center text-gray-700",
       headerCellClass: "text-center",
       formatter: (p) => (
-        <div>{p.row.cmp ? INR_FMT.format(p.row.cmp) : "-"}</div>
+        <div>{p.row.cmp ? INR_FMT.format(p.row.cmp) : "0"}</div>
       ),
     },
     {
@@ -107,11 +105,7 @@ export const gridColumns = () => {
         row?.gainLoss > 0
           ? "text-center text-green-600 font-semibold"
           : "text-center text-red-600 font-semibold",
-      formatter: (p) => {
-        const v = Number(p.row?.gainLoss ?? 0);
-        const text = Number.isFinite(v) ? INR_FMT.format(v) : 0;
-        return <div>{text}</div>;
-      },
+      formatter: (p) => <div>{INR_FMT.format(p.row?.gainLoss) || "0"}</div>,
     },
 
     {
